@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavanya Yeripilli | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+  <header class="site-header">
+    <div class="profile_name">Lavanya Yeripilli</div>
+    <nav class="topmenu" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="hero">
+      <div class="profile_image">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Profile portrait">
+      </div>
+      <div>
+        <p class="eyebrow">Student · Aspiring Web Developer</p>
+        <h1>Hi, I'm <span class="profile_name">Lavanya Yeripilli</span></h1>
+        <p>I am a Bachelor of Computer Applications student interested in programming, web development, Python, and artificial intelligence. I enjoy learning new technologies and improving my problem-solving skills through practical projects.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">Selected work</p><h2>Project Details</h2>
+      <div class="project-grid">
+        <article class="project-card"><h3>Student Task Planner</h3><p>A simple concept for organizing assignments, deadlines, and daily study goals.</p></article>
+        <article class="project-card"><h3>AI Career Guide</h3><p>A learning project concept that suggests career paths and skills based on a student's interests.</p></article>
+        <article class="project-card"><h3>Personal Portfolio Website</h3><p>A responsive website to present a profile, technical skills, projects, and recommendations.</p></article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="eyebrow">What I'm learning</p><h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"><h3>Python</h3><p>Basic programming and problem solving</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo"><h3>Java</h3><p>Object-oriented programming concepts</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo"><h3>C Programming</h3><p>Programming fundamentals</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo"><h3>Git</h3><p>Version control basics</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo"><h3>GitHub</h3><p>Code hosting and project sharing</p></div>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <p class="eyebrow">Feedback</p><h2>Recommendations</h2>
+      <div id="recommendationList" class="recommendation-list">
+        <blockquote class="recommendation"><p>“Lavanya is curious about technology and eager to strengthen her programming skills.”</p><cite>— Sample feedback</cite></blockquote>
+        <blockquote class="recommendation"><p>“She approaches new learning tasks with patience and a willingness to improve.”</p><cite>— Sample feedback</cite></blockquote>
+        <blockquote class="recommendation"><p>“Her interest in web development encourages her to explore creative solutions.”</p><cite>— Sample feedback</cite></blockquote>
+      </div>
+      <form id="recommendationForm">
+        <h3>Add a Recommendation</h3>
+        <label for="recommendationText">Recommendation</label>
+        <textarea id="recommendationText" rows="4" required placeholder="Write a recommendation"></textarea>
+        <label for="recommendationAuthor">Your name (optional)</label>
+        <input id="recommendationAuthor" type="text" placeholder="Name or role">
+        <button type="submit">Submit Recommendation</button>
+      </form>
+    </section>
+    <footer><a href="#home" class="home-link" aria-label="Home">⌂ Home</a><p>Portfolio of Lavanya Yeripilli</p></footer>
+  </main>
+  <div id="successToast" class="toast" role="status" aria-live="polite">Recommendation added successfully!</div>
+  <script src="script.js"></script>
+</body>
+</html>
